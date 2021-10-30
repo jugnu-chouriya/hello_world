@@ -22,14 +22,7 @@ int main(){
 
     return 0;
 }
-/*
-Create a header file named as
-my_math.h
-which has function as void max_min(int, int) 
-that accepts two ints, and print whichever 
-is max and min.
 
-*/
 
 
 
