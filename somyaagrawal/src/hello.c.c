@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "hello.h"
 
-int sam()
+int sgs_clib_count_vowels()
 {
    FILE *ptr_file;
    char s[1000];
