@@ -1,0 +1,17 @@
+CC = gcc
+CFLAGS =
+LIB =
+
+all:main
+
+hello:
+	$(CC) $(CFLAGS) -c subtract.c
+
+main:hello
+	$(CC) $(CFLAGS) subtract.o Aniket_Subtract.c -o Aniket_Subtract
+
+run:
+	./main
+
+clean:
+	rm main
