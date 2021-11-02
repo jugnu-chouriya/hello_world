@@ -1,17 +1,15 @@
-#include<stdio.h>
 #include <stdio.h>
-#include "..\include\myfile.h"
+#include "../include/myfile.h"
 
+//implementation 
 int main(){
 
-    char name[] = "Abhinav";
-    sgs_clib_convert_to_upper(name);
+    char *c ="12345678d my name is Jugnu Chouriya";
+    char *c1="sdkdjdJ";
 
-    printf("After convering to all Caps name is: %s",name);
-#include"../include/hello.h"
-int main(){
-    char a[]="VivekDawar";
-     sgs_clib_convert_to_lower(a);
-    printf("%s",a);
+    printf("length of the initial segment of str1 which consists entirely of characters not in str2 is : ");
+    printf("%ld",sgs_clib_strcspn(c,c1));
+
+    //Output is 8
 
 }

@@ -1,6 +1,8 @@
+#include<stddef.h>
 #ifndef _MYFILE_H
 #define _MYFILE_H
 
-void sgs_clib_convert_to_upper(char *message);
+size_t sgs_clib_strcspn(const char *str1, const char *str2);
+
 
 #endif

@@ -1,14 +1,17 @@
-#include <stdio.h>
 #include "../include/myfile.h"
 
-void sgs_clib_convert_to_upper(char *message){
+//function definition 
 
-    for(;*message != '\0';){
-
-        if((*message >= 97) && (*message<= 122)){
-            *message = *message - 32;
-        }
-        message++;
-
-    }
+size_t sgs_clib_strcspn(const char *str1, const char *str2)
+{
+   for(int i=0; *str1!='\0'; str1++,i++)
+   {
+      for(int j=0; str2[j]!='\0'; j++)
+      {
+         if(*str1 == str2[j])
+         {
+            return i;
+         }
+      }
+   }
 }
