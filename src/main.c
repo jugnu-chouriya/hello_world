@@ -1,17 +1,18 @@
 #include<stdio.h>
-#include <stdio.h>
-#include "..\include\myfile.h"
+#include"header.h"
+int main()
+{
+    float *ptr;
+	float arr[3][3];
+    int i;
+    ptr = sgs_clib_2d_double_array(&arr[3][3]);
 
-int main(){
-
-    char name[] = "Abhinav";
-    sgs_clib_convert_to_upper(name);
-
-    printf("After convering to all Caps name is: %s",name);
-#include"../include/hello.h"
-int main(){
-    char a[]="VivekDawar";
-     sgs_clib_convert_to_lower(a);
-    printf("%s",a);
+    for(i=0;i<3;i++)
+   for(int j=0;j<3;j++){
+   {
+       printf("%f ",(ptr+i));
+    }
+	}
+	// printf("%f ",(*ptr));
 
 }
