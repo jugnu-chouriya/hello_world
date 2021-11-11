@@ -1,0 +1,11 @@
+CC= gcc
+CFLAGS=
+LIB=
+
+all:main
+
+main:
+	$(CC) $(CFLAGS) Anushka_multiply.c Anushka_main -o main
+
+run:
+	.\main.exe
